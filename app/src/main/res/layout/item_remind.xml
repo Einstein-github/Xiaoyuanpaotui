@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_remind_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/item_remind_user_image"
+        android:textColor="#4d4d4d"
+        android:textSize="14sp"
+        tools:text="用户名"/>
+
+    <TextView
+        android:id="@+id/item_remind_time"
+        android:layout_alignTop="@id/item_remind_user_id"
+        android:layout_alignBottom="@+id/item_remind_user_id"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        tools:text="8小时前发表" />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/item_remind_user_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/item_remind_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_remind_user_id"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/item_remind_user_image"
+        android:maxLines="2"
+        tools:text="您的订单已被接单,点击查看跑腿员信息"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d0d0d0"/>
+</RelativeLayout>

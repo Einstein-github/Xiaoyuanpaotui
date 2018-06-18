@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/blue"
+        android:id="@+id/modify_address_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="@string/modify_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49.5dp">
+
+        <TextView
+            android:id="@+id/modify_address_name_text"
+            android:gravity="center_vertical"
+
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/Contact_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <EditText
+            android:layout_toRightOf="@+id/modify_address_name_text"
+            android:id="@+id/modify_address_name_edit"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:textSize="17sp"
+            android:hint="@string/Contact_name_example"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <View
+            android:layout_marginLeft="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d0d0d0"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49.5dp"
+        android:layout_gravity="center_vertical">
+        <RadioGroup
+            android:layout_marginLeft="70dp"
+            android:id="@+id/modify_address_sex_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_gravity="center"
+                android:id="@+id/modify_address_sex_man"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:button="@null"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gentlemen" />
+
+            <RadioButton
+                android:layout_gravity="center"
+                android:id="@+id/modify_address_sex_woman"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ladies" />
+
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d0d0d0"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49.5dp">
+
+        <TextView
+            android:id="@+id/modify_address_num_text"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <EditText
+            android:layout_toRightOf="@+id/modify_address_num_text"
+            android:id="@+id/modify_address_num_edit"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:textSize="17sp"
+            android:hint="@string/phone_number_example"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d0d0d0"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/modify_address_address"
+        android:layout_width="match_parent"
+        android:layout_height="49.5dp">
+
+        <TextView
+            android:id="@+id/modify_address_address_text"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/address"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <EditText
+            android:layout_toRightOf="@+id/modify_address_address_text"
+            android:layout_toLeftOf="@+id/modify_address_more_img"
+            android:id="@+id/modify_address_address_edit"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:textSize="17sp"
+            android:hint="@string/address_example"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:layout_width="200dp"
+            android:layout_height="60dp" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/modify_address_more_img"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/more"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d0d0d0"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49.5dp">
+
+        <TextView
+            android:id="@+id/modify_address_house_text"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="@string/House_number"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <EditText
+            android:layout_toRightOf="@+id/modify_address_house_text"
+            android:id="@+id/modify_address_house_edit"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:textSize="17sp"
+            android:hint="@string/House_number_example"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d0d0d0"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/modify_address_save"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_style_one"
+        android:text="@string/save"/>
+
+
+
+
+
+
+</LinearLayout>

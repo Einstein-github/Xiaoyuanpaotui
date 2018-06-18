@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="130dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_orders_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/item_orders_user_image"
+        android:textColor="#4d4d4d"
+        android:textSize="14dp"
+        tools:text="用户名"/>
+
+    <TextView
+        android:id="@+id/item_orders_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_orders_user_id"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:textColor="#999999"
+        android:textSize="12dp"
+        tools:text="8小时前发表" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/item_orders_user_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/item_orders_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_orders_user_image"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="-20dp"
+        android:textColor="#4d4d4d"
+        android:textSize="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/item_orders_user_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="我是内容容容我是我是内容"/>
+    <TextView
+        android:id="@+id/item_orders_status"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/item_orders_user_image"
+        android:layout_below="@+id/item_orders_content"
+        android:textColor="@color/blue"
+        android:textSize="16dp"
+        android:text="已接单"/>
+
+    <TextView
+        android:id="@+id/item_orders_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/item_orders_status"
+        android:layout_alignBottom="@+id/item_orders_status"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:text="5元"
+        android:textColor="@color/blue"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d0d0d0"
+        android:id="@+id/view" />
+</RelativeLayout>
